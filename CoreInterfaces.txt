@@ -1,0 +1,19 @@
+The Collection interface extends the Iterable interface that specifies an iterator to sequentially access the elements of an Iterable Object. 
+ 
+                                          <interface>
+                                          java.lang.Iterable<E>
+                                                 / \
+                                                  |
+                                           interface
+                                           Collection<E>
+                                                  |
+                       --------------------------------------------                            interface
+                       |                       |                  |                             Map<X,Y>
+                       interface         interface             interface                           |
+                       List<E>           Queue<E>              Set<E>                          interface
+                                               |                  |                            SortedMap<X,Y>
+                                         interface           interface                             |
+                                         Dequeue<E>          SortedSet<E>                       interface
+                                                                  |                             NavigableMap<X,Y>
+                                                             interface
+                                                             NavigableSet<E>
